@@ -7,7 +7,9 @@ public class TutorialSystems : Feature
 {
     public TutorialSystems(Contexts contexts) : base("Tutorial Systems")
     {
-        Add(new HelloWorldSystem(contexts));
-        Add(new DebugMessageSystem(contexts));
+        Add(new HelloWorldSystem(contexts)); // debug message
+        Add(new LogMouseClickSystem(contexts)); // debug message
+        Add(new DebugMessageSystem(contexts)); // print all debug message
+        Add(new CleanupDebugMessageSystem(contexts)); // clean
     }
 }
